@@ -67,4 +67,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Netflix Clone stream-gpt
+
+# Features
+
+    - login/sign Up Form
+    - redirect to Browse page
+
+- BROWSE (after authentication)
+
+  - header
+  - main container
+    - Trailer in Bg
+      - title & desc
+      - buttonGroup play & more
+    - movies suggestion by catagory rowWise
+      - movies list \* n
+
+- GPT seacrh page
+  - search page
+  - Movies suggestion according to search
