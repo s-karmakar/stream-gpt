@@ -75,6 +75,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
     - login/sign Up Form
     - redirect to Browse page
+    - Header
+    - Routing using react router
+    - signIn / sign up form
+    - Form validation
+    - useRef hook  for form validation
+    - Firebase setup
+    - deployed app in prod
+
+    - implemented sign in user api
+    - created redux storewith user slice
 
 - BROWSE (after authentication)
 
@@ -89,3 +99,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 - GPT seacrh page
   - search page
   - Movies suggestion according to search
+
+# Firebase
+
+- npm install firebasesudo npm install -g firebase-toolssudo npm install -g firebase-tools
+
+0. install firebase cli : npm i-g firebase-tools
+1. firebase login - firebase login
+2. initialize firebase - firebase init > then select hosting
+3. deploy command - firebase deploy
