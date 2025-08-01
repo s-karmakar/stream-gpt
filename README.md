@@ -86,6 +86,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
     - implemented sign in user api
     - created redux storewith user slice
 
+    - implemented sign out
+    - update profile
+
 - BROWSE (after authentication)
 
   - header
