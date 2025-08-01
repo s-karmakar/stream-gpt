@@ -6,10 +6,16 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+import { updateProfile } from "firebase/auth";
+import { useDispatch } from "react-redux";
+import { addUser } from "../utils/userSlice";
 
 const Login = () => {
   const [isSignInForm, setisSignInForm] = useState(true);
   const [errorMessage, seterrorMessage] = useState(null);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const nameRef = useRef(null);
   const emailRef = useRef(null);
@@ -30,8 +36,8 @@ const Login = () => {
       seterrorMessage(validationMessage);
       return;
     }
-
     seterrorMessage(null); // Clear any previous error messages
+
     if (!isSignInForm) {
       // signUp logic
       createUserWithEmailAndPassword(
@@ -43,11 +49,26 @@ const Login = () => {
           // Signed up
           const user = userCredential.user;
           console.log("User signed up:", user);
+
+          updateProfile(user, {
+            displayName: nameRef.current.value,
+            photoURL:
+              "https://www.reshot.com/preview-assets/icons/NC83A9ZR6U/sofa-user-NC83A9ZR6U.svg",
+          })
+            .then(() => {
+              // Profile updated!
+              const { uid, email, displayName, photoURL } = auth.currentUser;
+              dispatch(addUser({ uid, email, displayName, photoURL }));
+              navigate("/browse");
+            })
+            .catch((error) => {
+              // An error occurred
+              seterrorMessage(error.code + ": " + error.message);
+            });
         })
         .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          seterrorMessage(errorCode + ": " + errorMessage);
+          seterrorMessage(error.code + ": " + error.message);
+          navigate("/"); // Redirect to login page on error
         });
     } else {
       // signIn Logic
@@ -60,11 +81,13 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           console.log("User signed in:", user);
+          navigate("/browse");
         })
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
           seterrorMessage(errorCode + ": " + errorMessage);
+          navigate("/"); // Redirect to login page on error
         });
     }
   };
