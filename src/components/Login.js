@@ -9,6 +9,7 @@ import {
 import { updateProfile } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { USER_AVATAR_URL } from "../utils/constants";
 
 const Login = () => {
   const [isSignInForm, setisSignInForm] = useState(true);
@@ -51,8 +52,7 @@ const Login = () => {
 
           updateProfile(user, {
             displayName: nameRef.current.value,
-            photoURL:
-              "https://www.reshot.com/preview-assets/icons/NC83A9ZR6U/sofa-user-NC83A9ZR6U.svg",
+            photoURL: USER_AVATAR_URL,
           })
             .then(() => {
               // Profile updated!

@@ -89,6 +89,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
     - implemented sign out
     - update profile
 
+    - bugfixes
+    - ??? UNSUBSCRIBE TO onAuthStateChange
+    - hygine practice - constans.js
+    - get tmdb movie data from tmdb
+
+    - custom hook for popular movies
+    - created movieslice
+    - updated store with movie data
+    - trailer video
+    - bcg embeded youtube trailer video
+    - autoplay and mute
+    - tailwind classes added to main container
+
 - BROWSE (after authentication)
 
   - header
