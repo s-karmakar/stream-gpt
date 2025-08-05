@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./Login";
 import Browse from "./Browse";
 import { useDispatch } from "react-redux";
+import Test from "./Test";
 
 const Body = () => {
   const dispatch = useDispatch();
@@ -15,6 +16,10 @@ const Body = () => {
     {
       path: "/browse",
       element: <Browse />,
+    },
+    {
+      path: "/test",
+      element: <Test />,
     },
   ]);
   return (

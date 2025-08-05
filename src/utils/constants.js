@@ -18,3 +18,5 @@ const TMDB_BASE_URL = "https://api.themoviedb.org/3";
 export const TMDB_IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original";
 
 export const TMDB_POPULAR_MOVIES_URL = `${TMDB_BASE_URL}/movie/popular?language=en-US&page=1`;
+
+export const TMDB_IMG_POSTER_URL = "https://image.tmdb.org/t/p/w500";
