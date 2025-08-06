@@ -3,7 +3,7 @@ import MovieCard from "./MovieCard";
 
 const Test = () => {
   return (
-    <div className="text-white">
+    <div className="text-white border-blue-500 border-4">
       <div className="header w-full border border-red-500 border-2  p-9 flex justify-between fixed bg-transparent bg-gradient-to-b from-black z-10">
         <img src="" alt="App Logo" />
         This is Header.
@@ -14,6 +14,8 @@ const Test = () => {
           </button>
         </div>
       </div>
+
+      {/* done till here */}
 
       <div className="main-container border border-yellow-500 border-2  aspect-video bg-gray-800 relative">
         <iframe
@@ -34,190 +36,8 @@ const Test = () => {
           </buttongroup>
         </div>
       </div>
-      <div className="bg-black text-white ">
+      <div className="main-secondary-container bg-black text-white ">
         <div className="secondary-container border border-green-500 border-2 m-2 p-2 flex justify-between gap-4 overflow-auto overflow-x-scroll relative -top-48 bg-transparent">
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-        </div>
-
-        <div className="secondary-container border border-green-500 border-2 m-2 p-2 flex justify-between gap-4 overflow-auto overflow-x-scroll relative -top-48 bg-transparent">
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-        </div>
-
-        <div className="secondary-container border border-green-500 border-2 m-2 p-2 flex justify-between gap-4 overflow-auto overflow-x-scroll relative -top-48 bg-transparent">
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
-          <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
-            {" "}
-            MovieCard
-          </div>
           <div className="movie-card w-40 h-56 border-teal-500 border-2 bg-slate-600 bg-opacity-50">
             {" "}
             MovieCard

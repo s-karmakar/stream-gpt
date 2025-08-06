@@ -41,20 +41,19 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="fixed flex justify-between  px-6 py-2 bg-gradient-to-b from-black w-full z-20">
-      <img className=" w-44" src={NETFLIX_LOGO_URL} alt="logo" />
-
+    <div className="header w-full  px-9 py-4 flex justify-between fixed bg-transparent bg-gradient-to-b from-black z-30 text-white">
+      <img className=" w-44 bg-inherit" src={NETFLIX_LOGO_URL} alt="logo" />
+      Welcome to Stream-GPT
       {user && (
-        <div className="flex p-4 m-3">
+        <div className="user-info flex items-center bg-inherit">
           <img
             src={user?.photoURL}
             alt="user-logo"
-            className="w-12 h-12 rounded-full mx-4"
+            className="w-12 h-12 rounded-full mx-4 "
           />
-
           <button
             onClick={handleSignOut}
-            className="bg-red-700 text-white px-4 py-2 rounded-xl font-mono"
+            className="bg-red-700 text-white px-4 py-2 rounded-xl font-mono cursor-pointer"
           >
             Sign Out
           </button>

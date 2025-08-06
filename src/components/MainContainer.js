@@ -15,9 +15,12 @@ const MainContainer = () => {
   const { original_title, overview, id } = mainMovie;
 
   return (
-    <div>
-      <VideoTitle title={original_title} overview={overview} />
+    <div
+      className="main-container   aspect-video bg-gray-800 relative
+    "
+    >
       <VideoBcg id={id} />
+      <VideoTitle title={original_title} overview={overview} />
     </div>
   );
 };
