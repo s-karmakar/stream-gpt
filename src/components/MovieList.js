@@ -23,7 +23,7 @@ const MovieList = ({ title, movies }) => {
     <div className="main-secondary-container bg-black text-white ">
       <div className="secondary-container  mx-2 p-2  gap-4 overflow-auto  relative -top-28 bg-transparent">
         <h1 className="bg-transparent text-2xl my-2 p-2">{title}</h1>
-        <div className="movie-card w-40 h-56 bg-slate-600 bg-opacity-50 flex gap-4">
+        <div className="movie-card w-52 h-56 bg-slate-600 bg-opacity-50 flex gap-4">
           {movies?.map((movie) => (
             <MovieCard key={movie?.id} posterPath={movie.poster_path} />
           ))}

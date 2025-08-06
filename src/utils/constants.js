@@ -17,6 +17,12 @@ const TMDB_BASE_URL = "https://api.themoviedb.org/3";
 
 export const TMDB_IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original";
 
-export const TMDB_POPULAR_MOVIES_URL = `${TMDB_BASE_URL}/movie/popular?language=en-US&page=1`;
+export const TMDB_POPULAR_MOVIES_URL = `${TMDB_BASE_URL}/movie/popular?language=en-IN&page=1`;
+
+export const TMDB_NOW_PLAYING_MOVIES_URL = `${TMDB_BASE_URL}/movie/now_playing?language=en-IN&page=2`;
+
+export const TMDB_TOP_RATED_MOVIES_URL = `${TMDB_BASE_URL}/movie/top_rated?language=en-IN&page=1`;
+
+export const TMDB_UPCOMING_MOVIES_URL = `${TMDB_BASE_URL}/movie/upcoming?language=en-IN&page=1`;
 
 export const TMDB_IMG_POSTER_URL = "https://image.tmdb.org/t/p/w500";
